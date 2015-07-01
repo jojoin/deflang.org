@@ -1,0 +1,48 @@
+
+#left, #right{
+	display: block; min-height: 100px;
+}
+
+#left{
+	width: 62%;
+	float: left;
+	// background: #ddd;
+}
+
+#right{
+	width: 30%; padding: 2%; 
+	float: right;
+	border: 1px solid #ddd;
+}
+
+#left p{
+	margin: 20px 0;
+	// text-indent: 28px;
+	font-size: 14px;
+}
+
+#left p a{
+	font-size: inherit;
+	color: #0099FF;
+}
+
+#left .code{
+	margin: 16px 0;
+	font-size: 15px;
+	padding: 10px 16px;
+	color: #000;
+	// background: #f3f3f3;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+#left .code *{
+	font-family: "Consolas";
+	font-size: 15px;
+}
+
+
+#left .code b{ color: #993300; }
+#left .code u{ color: #090; }
+#left .code i{ color: #6699FF; font-weight: bold; }
+#left .code span{ color: #aaa; }
