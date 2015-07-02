@@ -1,4 +1,68 @@
 
+
+
+
+.bgcolor{
+	padding: 16px 0;
+	background: #EBEBE5;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+#wleft, #wright{
+	display: block; float: left;
+	width: 56%;
+}
+#wright{
+	width: 44%;
+	border-radius: 5px;
+}
+#wleft p{
+	padding-top: 16px;
+	font-size: 15px;
+	text-shadow: 0 1px #fff;
+	text-indent: 16px;
+}
+#wleft p b{
+	font-size: inherit; font-weight: bold;
+}
+#wright .code{
+	margin-left: 8%;
+	background: #fff;
+	border: 1px solid #888;
+	box-shadow: 1px 1px 4px #999;
+}
+
+#wleft .bot{
+	margin-top: 25px; 
+	color: #666;
+}
+#wleft a{
+	margin: 0 6px;
+	color: #728A9F;
+	font-size: 12px;
+}
+#wleft .download{
+	margin-right: 16px;
+	color: #fff;
+	text-shadow: 0 1px 1px #333;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 8px 20px; margin: 0;
+	// background: #555;
+	border-radius: 5px;
+	border: 1px solid #333; 
+	background: -webkit-linear-gradient(top,#666,#555);  
+	background: -moz-linear-gradient(top,#666,#555);  
+}
+
+#wleft .download:hover{
+	background: #555;  
+}
+
+
 #left, #right{
 	display: block; min-height: 100px;
 }
@@ -26,23 +90,3 @@
 	color: #0099FF;
 }
 
-#left .code{
-	margin: 16px 0;
-	font-size: 15px;
-	padding: 10px 16px;
-	color: #000;
-	// background: #f3f3f3;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-}
-
-#left .code *{
-	font-family: "Consolas";
-	font-size: 15px;
-}
-
-
-#left .code b{ color: #993300; }
-#left .code u{ color: #090; }
-#left .code i{ color: #6699FF; font-weight: bold; }
-#left .code span{ color: #aaa; }

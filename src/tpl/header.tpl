@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Def 编程语言官方网站</title>
+    <title>Def Programming Language</title>
     <link rel="stylesheet" type="text/css" href="/css/global.css" />
     <link rel="stylesheet" type="text/css" href="/css/frame.css" />
     <!css!>
@@ -13,22 +13,36 @@
 
 <!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
 
-<a id="forkme" target="_black" href="https://github.com/yangjiePro/Def" title="访问Github源码托管地址">
+<a id="forkme" target="_black" href="https://github.com/yangjiePro/Def">
 	<img src="/image/forkme.png">
 </a>
 
-<div id="wrap">
+<div class="wrapaper">
 	
 	<!--顶部导航-->
 	<div id="head">
-		<div class="item"><a id="nav_l1" href="/">Def 编程语言官网</a></div>
-		<div class="item"><a id="nav_l2" href="/">快速开始</a></div>
 		<a href="/">
-			<img class="item" src="/image/logo_small.png">
+			<img src="/image/logo_small.png">
 		</a>
-		<div class="item"><a id="nav_r1" href="/">文档</a></div>
-		<div class="item"><a id="nav_r2" href="/">源码下载</a></div>
-		<div class="item"><a id="nav_r3" href="/">关于</a></div>
-	</div>
+		<h1>Def</h1>
+		<p class="intro">Simple with Powerful</p>
 
+
+		<div class="nav">
+			<div class="item">
+				<a id="nav_1" href="/">Index</a>
+			</div><div class="item">
+				<a id="nav_2" href="/">Get Start</a>
+			</div><div class="item">
+				<a id="nav_3" href="/">Documentation</a>
+			</div><div class="item">
+				<a id="nav_4" href="/">Downloads</a>
+			</div><div class="item">
+				<a id="nav_5" href="/">News</a>
+			</div><div class="item">
+				<a id="nav_6" href="/">About</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
 

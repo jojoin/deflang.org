@@ -13,40 +13,66 @@
 
 
 
-#wrap {
+.wrapaper {
 	display: block; margin: 0 auto;
-	min-width: 800px;
-	max-width: 1120px;
+	width: 860px;
 	min-height: 100px;
-	background: #fff;
+	// background: #fff;
 }
 
+
+
 #head{
-	display: block; width: 100%; height: 180px;
-	margin: 36px 0;
-	text-align: center;
-	vertical-align: top;
+	display: block; position: relative;
+	width: 100%;
+	margin: 22px 0;
+	// background: #ddd;
+}
+
+#head img{
+	position: absolute; left: -105px; top: -10px;
+	width: 100px;
+}
+
+#head h1{
+	font-size: 38px;
+	color: #444;
+}
+#head .intro{
+	margin: 10px 0;
+	letter-spacing: 0.1em;
+	font-size: 16px;
+	color: #786;
+}
+
+#head .nav{
+	border-top: 4px solid #969F9F;
+	background: #E4EBEB;
+	border-radius: 0 0 5px 5px;
+}
+#nav_1{
+	border-radius: 0 0 0 5px;
 }
 
 #head .item{
-	display: inline-block; 
-	height: 180px; line-height: 180px;
-	vertical-align: top;
+	display: inline-block;
 }
+
+
 
 #head .item a{
-	padding: 5px 16px; margin: 0 8px;
-	font-size: 18px;
-	font-weight: bold;
-	color: #555;
-	border-bottom: 4px solid #999;
-	border-radius: 4px;
+	display: block;
+	padding: 6px 16px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #333;
+	// border-bottom: 4px solid #999;
+	// border-radius: 4px;
 }
 
-#head .item a.active, #head .item a:hover{
-	background: #f6f6f6;
+#head .item a.active{
+	background: #CCDBDB;
 	// color: #000;
-	border-color: #bbb;
 }
 
 
@@ -61,6 +87,27 @@
 
 
 
+
+.code{
+	font-size: 14px;
+	padding: 10px 16px;
+	color: #555;
+	// background: #f3f3f3;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+.code *{
+	font-family: "Consolas";
+	font-size: 14px;
+}
+
+
+.code b{ color: #993300; }
+.code u{ color: #090; }
+.code i{ color: #6699FF; font-weight: bold; }
+.code span{ color: #999988; font-style: italic; }
 
 
 
