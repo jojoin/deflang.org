@@ -11,12 +11,6 @@
 <body>
 
 
-<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
-
-<a id="forkme" target="_black" href="https://github.com/yangjiePro/Def">
-	<img src="/image/forkme.png">
-</a>
-
 <div class="wrapaper">
 	
 	<!--顶部导航-->
@@ -25,22 +19,22 @@
 			<img src="/image/logo_small.png">
 		</a>
 		<h1>Def</h1>
-		<p class="intro">Simple with Powerful</p>
+		<p class="intro">简捷而强大</p>
 
 
 		<div class="nav">
 			<div class="item">
-				<a id="nav_1" href="/">Index</a>
+				<a id="nav_1" href="/">首页</a>
 			</div><div class="item">
-				<a id="nav_2" href="/">Get Start</a>
+				<a id="nav_2" href="/">快速开始</a>
 			</div><div class="item">
-				<a id="nav_3" href="/">Documentation</a>
+				<a id="nav_3" href="/">文档</a>
 			</div><div class="item">
-				<a id="nav_4" href="/">Downloads</a>
+				<a id="nav_4" href="/">下载</a>
 			</div><div class="item">
-				<a id="nav_5" href="/">News</a>
+				<a id="nav_5" href="/">新闻</a>
 			</div><div class="item">
-				<a id="nav_6" href="/">About</a>
+				<a id="nav_6" href="/">关于</a>
 			</div>
 			<div class="clear"></div>
 		</div>

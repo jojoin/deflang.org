@@ -2,6 +2,13 @@
 </div><!-- end wrap -->
 
 
+<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
+
+<a id="forkme" target="_black" href="https://github.com/yangjiePro/Def">
+	<img src="/image/forkme.png">
+</a>
+
+
 <div class="bgcolor">
 <div class="wrapaper">
 
@@ -23,7 +30,7 @@
 			li : (<b>1 2 3 4 5</b>)<br/>
 			<span># 字典</span><br/>
 			dt : [<br/>
-			　<u>'name'</u>　<u>'def language'</u><br/>
+			　<u>'name'</u>　　<u>'def language'</u><br/>
 			　<u>'number'</u>　(<b>1 3 5 7</b>)<br/>
 			]<br>
 			li[<b>3</b>]　,　dt[<u>'name'</u>]　<span># 3 , yangjie</span><br/>
