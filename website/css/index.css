@@ -73,10 +73,37 @@
 	// background: #ddd;
 }
 
+#left h4{
+	color: #444;
+}
+#left p{
+	color: #444;
+}
+
 #right{
 	width: 30%; padding: 2%; 
 	float: right;
 	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #f9f9f9;
+}
+
+#right p{
+	display: block;
+	border-top: 1px dashed #ddd;
+	margin-top: 16px;
+	padding-top: 16px;
+	font-size: 14px;
+	color: #444;
+}
+#right i{
+	display: block;
+	font-size: 13px;
+	color: #bbb;
+}
+#right a{
+	font-size: 13px;
+	color: #3388B9;
 }
 
 #left p{
