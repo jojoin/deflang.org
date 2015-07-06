@@ -28,7 +28,7 @@
 #wleft p b{
 	font-size: inherit; font-weight: bold;
 }
-#wright .code{
+#wright code{
 	margin-left: 8%;
 	background: #fff;
 	border: 1px solid #888;

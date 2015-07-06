@@ -1,0 +1,27 @@
+/**
+ * 快速开始 页面样式
+ */
+p{
+	margin: 16px 0;
+	font-size: 14px;
+	color: #444;
+}
+
+p a{
+	margin: 0 3px;
+	font-size: 13px;
+	color: #3388B9;
+	cursor: pointer;
+}
+
+
+h5{
+	margin-top: 36px;
+	position: relative;
+	left: -18px;
+	color: #333;
+}
+
+code{
+	margin: 0 3px;
+}

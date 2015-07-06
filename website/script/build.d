@@ -1,6 +1,5 @@
 #--
 	Def 官方网站静态化生成程序
-
 --#
 
 
@@ -21,20 +20,36 @@ defun addcss(html name)
 ;
 
 
+# 生成一个页面
+defun createhtml(name  isdir:false)
+	fn : name
+	if isdir
+		fn : fn+'/index'
+	;
+	html_txt : addcss(html_header  name) 
+		+ fs.read(dirtpl+fn+'.tpl')
+		+ html_footer
+	html_file : fn+'.html'
+	isok : fs.write(dirweb+html_file  html_txt)
+	if ~isok # 错误
+		html_file : html_file + " fs write error !"
+	;
+	printl(html_file)
+;
+
+
+
 # #
 # 拷贝 build.d 至网站目录
 # #
 fs.copy('build.d'  dirweb+'script/')
 
-
 # #
-# 生成首页 index
+# 生成页面
 # #
-html_index : addcss(html_header  'index') 
-	+ fs.read(dirtpl+'index.tpl')
-	+ html_footer
-fs.write(dirweb+'index.html'  html_index)
-printl('index.html')
+createhtml( 'index' )    # 首页
+createhtml( 'getstart' true)    # 快速开始
+createhtml( 'download' true)    # 下载
 
 
 

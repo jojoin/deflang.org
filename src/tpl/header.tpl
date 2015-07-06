@@ -24,17 +24,19 @@
 
 		<div class="nav">
 			<div class="item">
-				<a id="nav_1" href="/">首页</a>
+				<a id="nav_index" href="/">首页</a>
 			</div><div class="item">
-				<a id="nav_2" href="/">快速开始</a>
+				<a id="nav_getstart" href="/getstart">5分钟上手教程</a>
 			</div><div class="item">
-				<a id="nav_3" href="/">文档</a>
+				<a id="nav_3" href="/document">文档</a>
 			</div><div class="item">
-				<a id="nav_4" href="/">下载</a>
+				<a id="nav_4" href="/download">下载</a>
 			</div><div class="item">
-				<a id="nav_5" href="/">新闻</a>
+				<a id="nav_5" href="/updatelog">更新日志</a>
 			</div><div class="item">
-				<a id="nav_6" href="/">关于</a>
+				<a id="nav_6" href="/news">新闻</a>
+			</div><div class="item">
+				<a id="nav_7" href="/about">关于</a>
 			</div>
 			<div class="clear"></div>
 		</div>
