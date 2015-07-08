@@ -5,10 +5,18 @@
     <title>Def 编程语言官方网站</title>
     <link rel="stylesheet" type="text/css" href="/css/global.css" />
     <link rel="stylesheet" type="text/css" href="/css/frame.css" />
-    <link rel="stylesheet" type="text/css" href="/css/download.css" /><!css!>
+    <link rel="stylesheet" type="text/css" href="/css/simple.css" /><!css!>
     <!headjs!>
 </head>
 <body>
+
+
+<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
+
+<a id="forkme" target="_blank" href="https://github.com/yangjiePro/Def">
+	<img src="/image/forkme.png">
+</a>
+
 
 
 <div class="wrapaper">
@@ -28,7 +36,7 @@
 			</div><div class="item">
 				<a id="nav_getstart" href="/getstart">5分钟上手教程</a>
 			</div><div class="item">
-				<a id="nav_3" href="/document">文档</a>
+				<a id="nav_document" href="/document">文档</a>
 			</div><div class="item">
 				<a id="nav_4" href="/download">下载</a>
 			</div><div class="item">
@@ -43,7 +51,34 @@
 	</div>
 
 
-<h1>下载</h1>
+<h4>下载 Def</h4>
+
+<p>你可以下载对应平台的可执行文件，也可以下载源码编译生成。</p>
+
+<h6>虚拟机下载</h6>
+
+<p>我们已经在常用的平台上生成了可用的虚拟机可执行文件，如果你仅仅只是使用 Def 而对其实现不感兴趣，可直接选择对应平台的可执行文件下载：</p>
+
+<p>　　<a href="/download/def-win64.exe">Windows 64bit</a></p>
+
+<p>　　<a href="/download/def-linux64">Linux 64bit</a></p>
+
+<p>　　<a href="/download/def-osx64">OS X 64bit</a></p>
+
+<h6>源码下载</h6>
+
+<p>如果没找到你的对应平台的可执行文件，或者像一探 Def 的究竟。你可以直接下载源码。</p>
+
+<p>　　<a href="https://codeload.github.com/yangjiePro/Def/zip/master">下载源码 zip 包</a></p>
+
+<p>　　<a href="https://github.com/yangjiePro/Def">访问 Github 托管页面</a></p>
+
+<p>Def 的虚拟机采用 C++11 编写，自助编译时需要编译器支持 C++11 标准。</p>
+
+
+<br/>
+<br/>
+<br/>
 
 
 	</div><!-- end wrap -->
@@ -54,7 +89,7 @@
 	<div class="botline"></div>
 
 
-	<div class="wrapaper">
+	<div class="wrapaper" id="footer">
 
 		<div class="quickgo">
 			<a href="/">首页</a> | 
@@ -66,15 +101,20 @@
 			<a href="/about">关于</a>
 
 			<span>Def 编程语言官方网站 © 2015~2016</span>
+
+			<p>本网站使用 Def 脚本制作，<a href="/script/build.d">查看脚本</a>。 请贡献代码至 <a href="https://github.com/yangjiePro/Def">GitHub</a>。 如有任何疑问和意见，请<a href="/about">联系我们</a>。</p>
 		</div>
 
 
 	</div><!-- end wrap -->
 
-	<!--导航栏高亮-->
+	<!--栏目高亮-->
 	<script type="text/javascript">
-		if(nav_active){
+		if(nav_active){ // 导航栏
 			document.getElementById(nav_active).className = "active"; 
+		}
+		if(menu_active){ // 菜单栏
+			document.getElementById("menu_"+menu_active).className = "active"; 
 		}
 	</script>
 

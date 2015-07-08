@@ -1,0 +1,122 @@
+/**
+ * 文档
+ */
+
+
+#menu{
+	list-style: none;
+	display: block;  float: left;
+	width: 16%; margin-bottom: 36px;
+	border-right: 1px solid #ddd;
+
+}
+#menu>li.title{
+	color: #aaa;
+}
+#menu li{
+	padding: 3px 12px;
+}
+
+#menu a{
+	display: inline-block; padding: 0px 6px;
+	font-size: 14px;
+	color: #0077AA;
+	border-radius: 3px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.16);
+}
+#menu a.active{
+	color: #fff;
+	background: #0077AA;
+	text-shadow: none;
+}
+#menu a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#menu a.gray{
+	color: #999;
+	text-shadow: none;
+}
+#menu a.active:hover, #menu a.gray:hover{
+	text-decoration: none;
+	cursor: default;
+}
+
+
+#menu ul{
+	display: block;
+	list-style: none;
+	margin-left: 24px; 
+}
+#menu ul li{
+	display: block;
+	padding: 0;
+}
+#menu ul li a{
+	font-size: 12px;
+	text-shadow: none;
+}
+
+
+
+
+
+
+#content{
+	display: block; float: right;
+	width: 79%;
+	padding-bottom: 36px;
+}
+
+#content h6{
+	display: block; position: relative; left: -14px;
+	color: #444;
+}
+/*
+#content h6::before{
+	content:"§ "
+}
+*/
+
+#content p{
+	margin: 14px 0;
+	font-size: 14px;
+	color: #555;
+}
+
+#content a{
+	font-size: inherit;
+	cursor: pointer;
+}
+
+
+#content table{
+	border-width: 1px;
+	border-color: #ccc;
+	border-collapse: collapse;
+}
+#content table th{
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #ccc;
+	background-color: #f0f0f0;
+	color: #555;
+	font-size: 14px;
+	font-weight: bold;
+}
+#content table td{
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #ccc;
+	background-color: #ffffff;
+	font-size: 13px;
+	color: #444;
+}
+#content table td:hover{
+	background-color: #f6f6f6;
+}
+#content table td em{
+	color: #999;
+}

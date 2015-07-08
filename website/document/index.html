@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Def 编程语言官方网站</title>
+    <link rel="stylesheet" type="text/css" href="/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="/css/frame.css" />
+    <link rel="stylesheet" type="text/css" href="/css/document.css" /><!css!>
+    <!headjs!>
+</head>
+<body>
+
+
+<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
+
+<a id="forkme" target="_blank" href="https://github.com/yangjiePro/Def">
+	<img src="/image/forkme.png">
+</a>
+
+
+
+<div class="wrapaper">
+	
+	<!--顶部导航-->
+	<div id="head">
+		<a href="/">
+			<img src="/image/logo_small.png">
+		</a>
+		<h1>Def</h1>
+		<p class="intro">简捷而强大</p>
+
+
+		<div class="nav">
+			<div class="item">
+				<a id="nav_index" href="/">首页</a>
+			</div><div class="item">
+				<a id="nav_getstart" href="/getstart">5分钟上手教程</a>
+			</div><div class="item">
+				<a id="nav_document" href="/document">文档</a>
+			</div><div class="item">
+				<a id="nav_4" href="/download">下载</a>
+			</div><div class="item">
+				<a id="nav_5" href="/updatelog">更新日志</a>
+			</div><div class="item">
+				<a id="nav_6" href="/news">新闻</a>
+			</div><div class="item">
+				<a id="nav_7" href="/about">关于</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+<!--
+
+文档菜单
+
+-->
+
+<!--导航栏高亮-->
+<script type="text/javascript">nav_active="nav_document"</script>
+
+
+<ul id="menu">
+	<li class="title">文档目录：</li>
+	<li><a id="menu_010" href="/document/010.html">操作符</a></li>
+	<li><a id="menu_020" href="/document/020.html">关键字</a></li>
+	<li><a id="menu_030" href="/document/030.html">变量</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_031" href="/document/031.html">基本</a></li>
+			<li><a id="menu_032" href="/document/032.html">高级</a></li>
+			<li><a id="menu_033" href="/document/033.html">容器</a></li>
+			<li><a>模块</a></li>
+			<li><a class="gray">类、对象</a></li>
+		</ul>
+	</li>
+	<li><a>结构</a></li>
+	<li>
+		<ul>
+			<li><a>if 条件分支</a></li>
+			<li><a>while 循环</a></li>
+			<li><a>for 遍历</a></li>
+		</ul>
+	</li>
+	<li><a>处理器</a></li>
+	<li><a>函数</a></li>
+	<li>
+		<ul>
+			<li><a>系统函数</a></li>
+		</ul>
+	</li>
+	<li><a>原生对象函数</a></li>
+	<li>
+		<ul>
+			<li><a>string 字符串</a></li>
+		</ul>
+	</li>
+	<li><a>模块</a></li>
+	<li><a>系统模块</a></li>
+	<li>
+		<ul>
+			<li><a>fs 文件系统</a></li>
+		</ul>
+	</li>
+	
+</ul>
+
+
+<div id="content">
+
+
+<h6>Def 官方标准文档</h6>
+
+<p>这里是 Def 语言的标准文档，包含语言规范、符号、关键字、标准库手册，以及一些重要的参考文章。</p>
+
+<p>阅读此文档可以快速了解 Def 语言的标准和细节。在这里您可以找到手册、教程和参考资料的链接，在你喜欢上 Def 编程的时候，它们将帮上大忙。</p>
+
+<br/>
+<h6>下载安装</h6>
+
+<p>可以直接下载对应平台的虚拟机可执行文件。也可以下载源码编译生成。<a href="/download">点击这里</a>了解更多。</p>
+
+<br/>
+<h6>入门</h6>
+
+<p>参看 <a href="/getstart">5分钟上手教程</a> ，现在就开始使用 Def ，很简单！</p>
+
+
+
+</div>
+
+
+	</div><!-- end wrap -->
+
+
+
+	<div class="clear"></div>
+	<div class="botline"></div>
+
+
+	<div class="wrapaper" id="footer">
+
+		<div class="quickgo">
+			<a href="/">首页</a> | 
+			<a href="/getstart">快速开始</a> | 
+			<a href="/document">文档</a> | 
+			<a href="/download">下载</a> | 
+			<a href="/updatelog">更新日志</a> | 
+			<a href="/news">新闻</a> | 
+			<a href="/about">关于</a>
+
+			<span>Def 编程语言官方网站 © 2015~2016</span>
+
+			<p>本网站使用 Def 脚本制作，<a href="/script/build.d">查看脚本</a>。 请贡献代码至 <a href="https://github.com/yangjiePro/Def">GitHub</a>。 如有任何疑问和意见，请<a href="/about">联系我们</a>。</p>
+		</div>
+
+
+	</div><!-- end wrap -->
+
+	<!--栏目高亮-->
+	<script type="text/javascript">
+		if(nav_active){ // 导航栏
+			document.getElementById(nav_active).className = "active"; 
+		}
+		if(menu_active){ // 菜单栏
+			document.getElementById("menu_"+menu_active).className = "active"; 
+		}
+	</script>
+
+	<!footjs!>
+
+</body>
+</html>

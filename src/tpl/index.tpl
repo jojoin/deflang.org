@@ -2,13 +2,6 @@
 </div><!-- end wrap -->
 
 
-<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
-
-<a id="forkme" target="_blank" href="https://github.com/yangjiePro/Def">
-	<img src="/image/forkme.png">
-</a>
-
-
 <div class="bgcolor">
 <div class="wrapaper">
 

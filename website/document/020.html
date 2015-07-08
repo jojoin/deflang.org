@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Def 编程语言官方网站</title>
+    <link rel="stylesheet" type="text/css" href="/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="/css/frame.css" />
+    <link rel="stylesheet" type="text/css" href="/css/document.css" /><!css!>
+    <!headjs!>
+</head>
+<body>
+
+
+<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
+
+<a id="forkme" target="_blank" href="https://github.com/yangjiePro/Def">
+	<img src="/image/forkme.png">
+</a>
+
+
+
+<div class="wrapaper">
+	
+	<!--顶部导航-->
+	<div id="head">
+		<a href="/">
+			<img src="/image/logo_small.png">
+		</a>
+		<h1>Def</h1>
+		<p class="intro">简捷而强大</p>
+
+
+		<div class="nav">
+			<div class="item">
+				<a id="nav_index" href="/">首页</a>
+			</div><div class="item">
+				<a id="nav_getstart" href="/getstart">5分钟上手教程</a>
+			</div><div class="item">
+				<a id="nav_document" href="/document">文档</a>
+			</div><div class="item">
+				<a id="nav_4" href="/download">下载</a>
+			</div><div class="item">
+				<a id="nav_5" href="/updatelog">更新日志</a>
+			</div><div class="item">
+				<a id="nav_6" href="/news">新闻</a>
+			</div><div class="item">
+				<a id="nav_7" href="/about">关于</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+<!--
+
+文档菜单
+
+-->
+
+<!--导航栏高亮-->
+<script type="text/javascript">nav_active="nav_document"</script>
+
+
+<ul id="menu">
+	<li class="title">文档目录：</li>
+	<li><a id="menu_010" href="/document/010.html">操作符</a></li>
+	<li><a id="menu_020" href="/document/020.html">关键字</a></li>
+	<li><a id="menu_030" href="/document/030.html">变量</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_031" href="/document/031.html">基本</a></li>
+			<li><a id="menu_032" href="/document/032.html">高级</a></li>
+			<li><a id="menu_033" href="/document/033.html">容器</a></li>
+			<li><a>模块</a></li>
+			<li><a class="gray">类、对象</a></li>
+		</ul>
+	</li>
+	<li><a>结构</a></li>
+	<li>
+		<ul>
+			<li><a>if 条件分支</a></li>
+			<li><a>while 循环</a></li>
+			<li><a>for 遍历</a></li>
+		</ul>
+	</li>
+	<li><a>处理器</a></li>
+	<li><a>函数</a></li>
+	<li>
+		<ul>
+			<li><a>系统函数</a></li>
+		</ul>
+	</li>
+	<li><a>原生对象函数</a></li>
+	<li>
+		<ul>
+			<li><a>string 字符串</a></li>
+		</ul>
+	</li>
+	<li><a>模块</a></li>
+	<li><a>系统模块</a></li>
+	<li>
+		<ul>
+			<li><a>fs 文件系统</a></li>
+		</ul>
+	</li>
+	
+</ul>
+
+
+<div id="content">
+
+
+<!--菜单栏高亮-->
+<script type="text/javascript">menu_active="020"</script>
+
+<h6>关键字</h6>
+
+<p>注意：关键字不能作为程序的变量名、函数名、处理器名或类成员名。</p>
+
+<p>说明及使用示例：</p>
+<style>
+	table tr td:first-child{
+		font-size: 18px !important;
+		color: #007FD2 !important;
+	}
+	table tr td{
+		padding: 10px 14px !important;
+	}
+</style>
+<table>
+	<tr>
+		<th>关键字</th>
+		<th>使用说明</td>
+		<th>使用示例</td>
+	</tr>
+
+	<tr><td>none</td><td>空变量字面值</td><td>val : none</td></tr>
+	<tr><td>true</td><td>布尔值 字面值 真</td><td>val : true</td></tr>
+	<tr><td>false</td><td>布尔值 字面值 假</td><td>val : false</td></tr>
+
+	<tr><td>def</td><td>定义处理器</td><td>def proc{a b}<br/>　v : evaluat(a)<br/>　assign(b v)<br/>;</td></tr>
+	<tr><td>defun</td><td>定义函数</td><td>def func(a b)<br/>　a + b<br/>;</td></tr>
+	<tr><td>class</td><td>定义类</td><td>保留</td></tr>
+
+	<tr><td>return</td><td>函数或处理器返回值</td><td>def func(a b)<br/>　if a>b<br/>　　return a<br/>　;<br/>　b<br/>;</td></tr>
+
+	<tr><td>if , elif, else</td><td>条件分支结构</td><td>if num=1<br/>　print('first')<br/>elif num=2<br/>　print('second')<br/>else<br/>　print('others')<br/>;</td></tr>
+	<tr><td>while</td><td>循环结构</td><td>n : 10<br/>while n>0<br/>　print(n)<br/>　n : n - 1<br/>;</td></tr>
+
+	<tr><td>for</td><td>容器遍历</td><td>con : (1 2 3)<br/>for con k v<br/>　print(v)<br/>;</td></tr>
+
+	<tr><td>import</td><td>导入模块</td><td>import "fs" <em># 导入文件系统模块</em><br/>um : import "user_mod.d" <em># 导入用户自定义模块并重命名</em></td></tr>
+</table>
+</div>
+
+
+	</div><!-- end wrap -->
+
+
+
+	<div class="clear"></div>
+	<div class="botline"></div>
+
+
+	<div class="wrapaper" id="footer">
+
+		<div class="quickgo">
+			<a href="/">首页</a> | 
+			<a href="/getstart">快速开始</a> | 
+			<a href="/document">文档</a> | 
+			<a href="/download">下载</a> | 
+			<a href="/updatelog">更新日志</a> | 
+			<a href="/news">新闻</a> | 
+			<a href="/about">关于</a>
+
+			<span>Def 编程语言官方网站 © 2015~2016</span>
+
+			<p>本网站使用 Def 脚本制作，<a href="/script/build.d">查看脚本</a>。 请贡献代码至 <a href="https://github.com/yangjiePro/Def">GitHub</a>。 如有任何疑问和意见，请<a href="/about">联系我们</a>。</p>
+		</div>
+
+
+	</div><!-- end wrap -->
+
+	<!--栏目高亮-->
+	<script type="text/javascript">
+		if(nav_active){ // 导航栏
+			document.getElementById(nav_active).className = "active"; 
+		}
+		if(menu_active){ // 菜单栏
+			document.getElementById("menu_"+menu_active).className = "active"; 
+		}
+	</script>
+
+	<!footjs!>
+
+</body>
+</html>

@@ -11,6 +11,14 @@
 <body>
 
 
+<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
+
+<a id="forkme" target="_blank" href="https://github.com/yangjiePro/Def">
+	<img src="/image/forkme.png">
+</a>
+
+
+
 <div class="wrapaper">
 	
 	<!--顶部导航-->
@@ -28,7 +36,7 @@
 			</div><div class="item">
 				<a id="nav_getstart" href="/getstart">5分钟上手教程</a>
 			</div><div class="item">
-				<a id="nav_3" href="/document">文档</a>
+				<a id="nav_document" href="/document">文档</a>
 			</div><div class="item">
 				<a id="nav_4" href="/download">下载</a>
 			</div><div class="item">

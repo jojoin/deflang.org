@@ -41,7 +41,6 @@
 }
 #wleft a{
 	margin: 0 6px;
-	color: #728A9F;
 	font-size: 12px;
 }
 #wleft .download{
@@ -103,7 +102,6 @@
 }
 #right a{
 	font-size: 13px;
-	color: #3388B9;
 }
 
 #left p{
@@ -114,6 +112,6 @@
 
 #left p a{
 	font-size: inherit;
-	color: #0099FF;
 }
+
 

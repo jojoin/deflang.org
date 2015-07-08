@@ -153,7 +153,7 @@ foreach{ list k v<br/>
 <i>print</i>(total)　<span>#求和结果： 21</span><br/>
 </code>
 
-<p>更多示例请查看 Def 语言的 <a href="https://github.com/yangjiePro/Def/tree/master/test" target="_blank">开发测试用例</a>，了解 Def 其它更多的高级特征。</p>
+<p>查看 Def 语言的 <a href="https://github.com/yangjiePro/Def/tree/master/test" target="_blank">开发测试用例</a>，或阅读 <a href="/document">标准手册</a>，了解 Def 其它更多的高级特征。</p>
 
 
 <br/>

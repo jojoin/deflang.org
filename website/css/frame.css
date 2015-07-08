@@ -36,7 +36,7 @@
 
 #head h1{
 	font-size: 38px;
-	color: #444;
+	color: #333;
 }
 #head .intro{
 	margin: 10px 0;
@@ -50,7 +50,7 @@
 	background: #E4EBEB;
 	border-radius: 0 0 5px 5px;
 }
-#nav_1{
+#nav_index{
 	border-radius: 0 0 0 5px;
 }
 
@@ -90,8 +90,8 @@
 
 
 code{
-	display: inline-block;
-	padding: 0px 5px;
+	display: inline;
+	padding: 1px 5px;
 	font-size: 13px;
 	color: #555;
 	background: #f3f3f3;
@@ -131,15 +131,26 @@ code span{ color: #999988; font-style: italic; } /*注释*/
 
 /*  footer  */
 
-.quickgo *{
+#footer .quickgo *{
 	font-size: 13px;
 	
 }
-.quickgo span{
+#footer .quickgo span{
 	float: right;
 	color: #999;
 	
 }
+#footer .quickgo p{
+	margin-top: 18px;
+	padding: 10px 15px;
+	color: #666;
+	background: #f3f3f3;
+	border-radius: 4px;
+
+	
+}
+
+
 
 
 

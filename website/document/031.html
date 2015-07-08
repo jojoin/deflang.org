@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Def 编程语言官方网站</title>
+    <link rel="stylesheet" type="text/css" href="/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="/css/frame.css" />
+    <link rel="stylesheet" type="text/css" href="/css/document.css" /><!css!>
+    <!headjs!>
+</head>
+<body>
+
+
+<!-- https://codeload.github.com/yangjiePro/Def/zip/master -->
+
+<a id="forkme" target="_blank" href="https://github.com/yangjiePro/Def">
+	<img src="/image/forkme.png">
+</a>
+
+
+
+<div class="wrapaper">
+	
+	<!--顶部导航-->
+	<div id="head">
+		<a href="/">
+			<img src="/image/logo_small.png">
+		</a>
+		<h1>Def</h1>
+		<p class="intro">简捷而强大</p>
+
+
+		<div class="nav">
+			<div class="item">
+				<a id="nav_index" href="/">首页</a>
+			</div><div class="item">
+				<a id="nav_getstart" href="/getstart">5分钟上手教程</a>
+			</div><div class="item">
+				<a id="nav_document" href="/document">文档</a>
+			</div><div class="item">
+				<a id="nav_4" href="/download">下载</a>
+			</div><div class="item">
+				<a id="nav_5" href="/updatelog">更新日志</a>
+			</div><div class="item">
+				<a id="nav_6" href="/news">新闻</a>
+			</div><div class="item">
+				<a id="nav_7" href="/about">关于</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+<!--
+
+文档菜单
+
+-->
+
+<!--导航栏高亮-->
+<script type="text/javascript">nav_active="nav_document"</script>
+
+
+<ul id="menu">
+	<li class="title">文档目录：</li>
+	<li><a id="menu_010" href="/document/010.html">操作符</a></li>
+	<li><a id="menu_020" href="/document/020.html">关键字</a></li>
+	<li><a id="menu_030" href="/document/030.html">变量</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_031" href="/document/031.html">基本</a></li>
+			<li><a id="menu_032" href="/document/032.html">高级</a></li>
+			<li><a id="menu_033" href="/document/033.html">容器</a></li>
+			<li><a>模块</a></li>
+			<li><a class="gray">类、对象</a></li>
+		</ul>
+	</li>
+	<li><a>结构</a></li>
+	<li>
+		<ul>
+			<li><a>if 条件分支</a></li>
+			<li><a>while 循环</a></li>
+			<li><a>for 遍历</a></li>
+		</ul>
+	</li>
+	<li><a>处理器</a></li>
+	<li><a>函数</a></li>
+	<li>
+		<ul>
+			<li><a>系统函数</a></li>
+		</ul>
+	</li>
+	<li><a>原生对象函数</a></li>
+	<li>
+		<ul>
+			<li><a>string 字符串</a></li>
+		</ul>
+	</li>
+	<li><a>模块</a></li>
+	<li><a>系统模块</a></li>
+	<li>
+		<ul>
+			<li><a>fs 文件系统</a></li>
+		</ul>
+	</li>
+	
+</ul>
+
+
+<div id="content">
+
+
+<!--菜单栏高亮-->
+<script type="text/javascript">menu_active="031"</script>
+
+<h6>基本类型变量</h6>
+
+<p>5 种基本类型：none 无、bool 布尔、int 整数、float 浮点数、string 字符串</p>
+
+<br/>
+<h6>none 无</h6>
+
+<p>‘无’是一个特殊的常量。可将 none 赋值给任何变量以释放其内存，和任何其他的数据类型比较永远返回 false。字典访问不存在的键名、列表访问下标超出最大值、欲读取的文件不存在等情况下，返回 none 值。</p>
+
+<br/>
+<h6>bool 布尔</h6>
+
+<p>布尔值有且仅有两个字面量：真 true、假 false。是进行条件判断的结果。也可随意赋值。</p>
+
+<br/>
+<h6>int 整数</h6>
+
+<p>十进制数即为其字面值。可直接书写用于变量赋值：<code>num : <b>123</b></code>，函数参数：<code>add(n <b>123</b>)</code>，以及列表下标：<code>list[<b>1</b>]</code>等。</p>
+
+<br/>
+<h6>float 浮点数</h6>
+
+<p>即通常所说的小数。字面量表示为 数字+点：<code><b>56.9</b></code>、<code><b>0.12</b></code>、<code><b>12.0</b></code>。其用法与整形值相似。</p>
+
+<br/>
+<h6>string 字符串</h6>
+
+<p>用单引号或双引号引用的任意长度的字符内容。空字符串：<code><u>''</u></code>或<code><u>""</u></code>，长度为 1 的字符串：<code><u>'a'</u></code>或<code><u>"x"</u></code>，包含空格引号或其它特殊字符的字符串<code><u>'word:"hi !"'</u></code>、<code><u>"say:'hello!' ！@#￥%~ +-*/"</u></code>，包含转义字符：<code><u>"he<b>\"</b>llo"</u></code>、<code><u>'it<b>\'</b>s yours'</u></code>，换行转义：<code><u>"line finished.<b>\n</b>newline !"</u></code>。</p>
+
+<p>如下字符可用于转义：</p>
+
+<table>
+	<tr><td>\\</td><td>斜杠</td></tr>
+	<tr><td>\'</td><td>单引号</td></tr>
+	<tr><td>\"</td><td>双引号</td></tr>
+	<tr><td>\n</td><td>换行</td></tr>
+</table>
+<!--
+	\' // fall through
+	case '"' :  // fall through
+	case '\\': 
+	return tok;
+	case '0' : return '\0'; //NULL空字符
+	case 'a' : return '\a'; //响铃
+	case 'b' : return '\b'; //退格
+	case 'f' : return '\f'; //换页
+	case 'n' : return '\n'; //换行
+	case 'r' : return '\r'; //回车
+	case 't' : return '\t'; //水平制表
+-->
+
+<p>与其它语言不同的是，Def 的字符串字面量是可以直接换行而无需转义的，即下面的用法是合法的：</p>
+
+<code class="block">
+<span># 包含换行的字符串</span><br/>
+str : <u>" 1. some...<br/>
+2. some...<br/>
+3. some..."</u>
+<br/>
+<i>print</i>(str)
+</code>
+
+<p>除了单引号和双引号包含的字符串，Def 还支持 3 个连续引号包裹的块字符串：</p>
+
+<code class="block">
+<span># 块字符串</span><br/>
+bstr1 : <br/>
+<u>"""<br/>
+on"e<br/>
+tw'o<br/>
+"""
+</u><br/>
+bstr2 : <u>'''on"e<br/>
+tw'o'''</u><br/>
+bstr3 : <u>"on<b>\"</b>e<b>\n</b>tw'o"</u><br/>
+<span># 上面 3 个字符串值完全相同</span>
+</code>
+
+<p>或许你已经看出来两点不同：1. 块字符串将不用转义；2. 块字符串会忽略开头与结尾的两个的换行符；</p>
+
+</div>
+
+
+	</div><!-- end wrap -->
+
+
+
+	<div class="clear"></div>
+	<div class="botline"></div>
+
+
+	<div class="wrapaper" id="footer">
+
+		<div class="quickgo">
+			<a href="/">首页</a> | 
+			<a href="/getstart">快速开始</a> | 
+			<a href="/document">文档</a> | 
+			<a href="/download">下载</a> | 
+			<a href="/updatelog">更新日志</a> | 
+			<a href="/news">新闻</a> | 
+			<a href="/about">关于</a>
+
+			<span>Def 编程语言官方网站 © 2015~2016</span>
+
+			<p>本网站使用 Def 脚本制作，<a href="/script/build.d">查看脚本</a>。 请贡献代码至 <a href="https://github.com/yangjiePro/Def">GitHub</a>。 如有任何疑问和意见，请<a href="/about">联系我们</a>。</p>
+		</div>
+
+
+	</div><!-- end wrap -->
+
+	<!--栏目高亮-->
+	<script type="text/javascript">
+		if(nav_active){ // 导航栏
+			document.getElementById(nav_active).className = "active"; 
+		}
+		if(menu_active){ // 菜单栏
+			document.getElementById("menu_"+menu_active).className = "active"; 
+		}
+	</script>
+
+	<!footjs!>
+
+</body>
+</html>
