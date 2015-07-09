@@ -1,4 +1,7 @@
 
+<!--导航栏高亮-->
+<script type="text/javascript">nav_active="nav_download"</script>
+
 <h4>下载 Def</h4>
 
 <p>你可以下载对应平台的可执行文件，也可以下载源码编译生成。</p>

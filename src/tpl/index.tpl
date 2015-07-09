@@ -16,18 +16,21 @@
 
 	<!--左侧内容-->
 	<div id="wright">
-		<code class="block">
-			<span># 变量赋值</span><br/>
-			word : <u>"hello "</u> + <u>"world !"</u><br/>
-			<span># 列表</span><br/>
-			li : (<b>1 2 3 4 5</b>)<br/>
-			<span># 字典</span><br/>
-			dt : [<br/>
-			　<u>'name'</u>　　<u>'def language'</u><br/>
-			　<u>'number'</u>　(<b>1 3 5 7</b>)<br/>
-			]<br>
-			li[<b>3</b>]　,　dt[<u>'name'</u>]　<span># 3 , yangjie</span><br/>
-		</code>
+
+
+<code class="block"><span># 变量赋值</span>
+word : <u>"hello "</u> + <u>"world !"</u>
+<span># 列表</span>
+li : (<b>1 2 3 4 5</b>)
+<span># 字典</span>
+dt : [
+  <u>'name'</u>    <u>'def language'</u>
+  <u>'number'</u>  (<b>1 3 5 7</b>)
+]
+li[<b>3</b>]  ,  dt[<u>'name'</u>]  <span># 3 , yangjie</span>
+</code>
+
+
 	</div>
 
 	<div class="clear"></div>
@@ -54,9 +57,9 @@
 	<p>不需要安装IDE，不需要下载标准库，不需要环境配置，不需要编译，不需要任何麻烦！</p>
 	<p>三步即可得到你想要的结果：</p>
 	<p>
-	　　1. <a href="/download">下载</a> Def 虚拟机（可执行文件: <a href="/download/def-win64.exe">Windows(64)</a> , <a href="/download/def-linux64">Linux(64)</a> , <a href="/download/def-osx64">OS X(64)</a>）<br />
-	　　2. 使用任何文本编辑器编写 Def 代码并保存<br />
-	　　3. 命令行输入　` def hello.d `　运行代码
+	    1. <a href="/download">下载</a> Def 虚拟机（可执行文件: <a href="/download/def-win64.exe">Windows(64)</a> , <a href="/download/def-linux64">Linux(64)</a> , <a href="/download/def-osx64">OS X(64)</a>）<br />
+	    2. 使用任何文本编辑器编写 Def 代码并保存<br />
+	    3. 命令行输入  ` def hello.d `  运行代码
 	</p>
 	<p>了解跨平台使用 Def，或者构建你的 “hello world” 程序，详情请点击 <a href="/download">查看更多</a> 。</p>
 

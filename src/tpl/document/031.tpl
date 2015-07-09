@@ -55,30 +55,26 @@
 
 <p>与其它语言不同的是，Def 的字符串字面量是可以直接换行而无需转义的，即下面的用法是合法的：</p>
 
-<code class="block">
-<span># 包含换行的字符串</span><br/>
-str : <u>" 1. some...<br/>
-2. some...<br/>
+<code class="block"><span># 包含换行的字符串</span>
+str : <u>" 1. some...
+2. some...
 3. some..."</u>
-<br/>
-<i>print</i>(str)
-</code>
+
+<i>print</i>(str)</code>
 
 <p>除了单引号和双引号包含的字符串，Def 还支持 3 个连续引号包裹的块字符串：</p>
 
-<code class="block">
-<span># 块字符串</span><br/>
-bstr1 : <br/>
-<u>"""<br/>
-on"e<br/>
-tw'o<br/>
+<code class="block"><span># 块字符串</span>
+bstr1 : 
+<u>"""
+on"e
+tw'o
 """
-</u><br/>
-bstr2 : <u>'''on"e<br/>
-tw'o'''</u><br/>
-bstr3 : <u>"on<b>\"</b>e<b>\n</b>tw'o"</u><br/>
-<span># 上面 3 个字符串值完全相同</span>
-</code>
+</u>
+bstr2 : <u>'''on"e
+tw'o'''</u>
+bstr3 : <u>"on<b>\"</b>e<b>\n</b>tw'o"</u>
+<span># 上面 3 个字符串值完全相同</span></code>
 
 <p>或许你已经看出来两点不同：1. 块字符串将不用转义；2. 块字符串会忽略开头与结尾的两个的换行符；</p>
 

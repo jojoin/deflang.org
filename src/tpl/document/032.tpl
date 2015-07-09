@@ -21,14 +21,13 @@
 
 <p>node 对象是一种比较特殊的对象，通过它可以像处理普通数据一样处理程序代码。用于 block 块结构容器对象下标访问返回值，和调用<a href="/document/050.html">处理器</a>所传参数。</p>
 
-<code class="block">
-<span># node 对象的使用</span><br/>
-code : {<br/>
-　　k<br/>
-　　<i>print</i>(k)<br/>
-　　k : k + <b>1</b><br/>
-}<br/>
-k : 1<br/>
-<i>eval</i>(code[3])<br/>
+<code class="block"><span># node 对象的使用</span>
+code : {
+	k
+	<i>print</i>(k)
+	k : k + <b>1</b>
+}
+k : 1
+<i>eval</i>(code[3])
 <i>print</i>(k)　<span># 2</span>
 </code>

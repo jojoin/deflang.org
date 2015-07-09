@@ -11,13 +11,11 @@
 
 <p>列表是一种顺序储存结构，能够通过整数下标访问，支持在任意位置添加或删除元素，支持保存任何类型的变量（支持容器嵌套）。</p>
 
-<code class="block">
-<span># list 列表的使用</span><br/>
-x : <b>1</b> , y : <u>'def'</u><br/>
-list : (<b>1 2 12.5</b> <u>'a' 'b'</u> (x y) )<br/>
-list[] : <u>'deflang'</u>　<span># 末尾插入元素</span><br/>
-<i>print</i>(list[3])　<span># 12.5</span><br/>
-</code>
+<code class="block"><span># list 列表的使用</span>
+x : <b>1</b> , y : <u>'def'</u>
+list : (<b>1 2 12.5</b> <u>'a' 'b'</u> (x y) )
+list[] : <u>'deflang'</u>  <span># 末尾插入元素</span>
+<i>print</i>(list[3])  <span># 12.5</span></code>
 
 <p>注意：Def 列表的下标从 1 开始。</p>
 
@@ -26,19 +24,17 @@ list[] : <u>'deflang'</u>　<span># 末尾插入元素</span><br/>
 
 <p>字典是一种键值对数据结构，通过字符串的键访问元素，支持添加删除替换等操作。支持保存任何类型变量和容器嵌套。</p>
 
-<code class="block">
-<span># dict 字典的使用</span><br/>
-dict : [<br/>
-　　<u>'name'</u>　<u>"Def"</u><br/>
-　　<u>'year'</u>　<b>2015</b><br/>
-　　<u>'num'</u>　(<b>1 3 9</b>)<br/>
-　　<u>'info'</u>　[<br/>
-　　　　<u>'author'</u>　<u>"yangjie"</u><br/>
-　　]<br/>
-]<br/>
-dict[<u>'website'</u>] : <u>"www.def;lang.org"</u>　<span># 添加或替换项目</span><br/>
-<i>print</i>(dict[<u>'year'</u>])　<span># 2015</span>
-</code>
+<code class="block"><span># dict 字典的使用</span>
+dict : [
+	<u>'name'</u>　<u>"Def"</u>
+	<u>'year'</u>　<b>2015</b>
+	<u>'num'</u>　(<b>1 3 9</b>)
+	<u>'info'</u>　[
+		<u>'author'</u>　<u>"yangjie"</u>
+	]
+]
+dict[<u>'website'</u>] : <u>"www.def;lang.org"</u>  <span># 添加或替换项目</span>
+<i>print</i>(dict[<u>'year'</u>])  <span># 2015</span></code>
 
 
 <br/>
@@ -47,19 +43,17 @@ dict[<u>'website'</u>] : <u>"www.def;lang.org"</u>　<span># 添加或替换项�
 <p>block 是一种比较特殊的容器，结构和操作方式类似列表。保存的元素仅为 node 类型。块结构包含的语句不会立即执行，而是当做变量保存起来，在方便在需要的时候处理或执行。</p>
 
 
-<code class="block">
-<span># node 对象的使用</span><br/>
-code : {<br/>
-　　k<br/>
-　　<i>print</i>(k)<br/>
-　　k : k + <b>1</b><br/>
-}<br/>
-k : 1<br/>
-<i>eval</i>(code[3])　<span># 执行第三条语句</span><br/>
-<i>print</i>(k)　<span># 2</span><br/>
-<i>eval</i>(code)　<span># 执行整个块</span><br/>
-<i>print</i>(k)　<span># 3</span>
-</code>
+<code class="block"><span># node 对象的使用</span>
+code : {
+　　k
+　　<i>print</i>(k)
+　　k : k + <b>1</b>
+}
+k : <b>1</b>
+<i>eval</i>(code[3])  <span># 执行第三条语句</span>
+<i>print</i>(k)  <span># 2</span>
+<i>eval</i>(code)  <span># 执行整个块</span>
+<i>print</i>(k)  <span># 3</span></code>
 
 
 

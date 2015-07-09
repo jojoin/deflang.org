@@ -51,4 +51,7 @@
 	</tr><tr><td>~=</td><td>组合</td><td>不等于判断</td><td>n : 1<br/>print( n ~= 1 ) <em># false</em></td></tr>
 
 	</tr><tr><td>~</td><td>波浪号</td><td>条件取反</td><td>n : 1<br/>print( ~n=1 ) <em># false</em></td></tr>
+
+	</tr><tr><td>&</td><td>and 符</td><td>逻辑运算 “与”</td><td>n : 1<br/>print( n&1 ) <em># true</em></td></tr>
+	</tr><tr><td>|</td><td>or 符</td><td>逻辑运算 “或”（返回第一个为判断‘真’的值，忽略（不执行）后面的代码）</td><td>n : 1<br/>print( n|0 ) <em># 1</em></td></tr>
 </table>

@@ -7,6 +7,16 @@
     <link rel="stylesheet" type="text/css" href="/css/frame.css" />
     <!css!>
     <!headjs!>
+    <script>/* 百度统计代码 */
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?de0e12251d89b0b4eb3199f3f7dce17c";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<meta name="baidu-site-verification" content="Sptg5tTSWz" />
 </head>
 <body>
 
@@ -38,13 +48,13 @@
 			</div><div class="item">
 				<a id="nav_document" href="/document">文档</a>
 			</div><div class="item">
-				<a id="nav_4" href="/download">下载</a>
+				<a id="nav_download" href="/download">下载</a>
 			</div><div class="item">
-				<a id="nav_5" href="/updatelog">更新日志</a>
+				<a id="nav_updatelog" href="/updatelog">更新日志</a>
 			</div><div class="item">
-				<a id="nav_6" href="/news">新闻</a>
+				<a id="nav_news" href="/news">新闻</a>
 			</div><div class="item">
-				<a id="nav_7" href="/about">关于</a>
+				<a id="nav_about" href="/about">关于</a>
 			</div>
 			<div class="clear"></div>
 		</div>

@@ -120,3 +120,7 @@
 #content table td em{
 	color: #999;
 }
+
+#content p code{
+	margin: 0 3px;
+}

@@ -22,7 +22,7 @@
 
 			<span>Def 编程语言官方网站 © 2015~2016</span>
 
-			<p>本网站使用 Def 脚本制作，<a href="/script/build.d">查看脚本</a>。 请贡献代码至 <a href="https://github.com/yangjiePro/Def">GitHub</a>。 如有任何疑问和意见，请<a href="/about">联系我们</a>。</p>
+			<p>本网站使用 Def 脚本制作（<a href="/script/build.d">查看脚本</a>），并托管代码至 <a href="https://github.com/yangjiePro/deflang.org">GitHub</a>。 如有任何疑问和意见，请<a href="/about">联系我们</a>。</p>
 		</div>
 
 

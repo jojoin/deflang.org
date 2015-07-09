@@ -18,19 +18,19 @@
 			<li><a id="menu_031" href="/document/031.html">基本</a></li>
 			<li><a id="menu_032" href="/document/032.html">高级</a></li>
 			<li><a id="menu_033" href="/document/033.html">容器</a></li>
-			<li><a>模块</a></li>
+			<li><a id="menu_034" href="/document/034.html">模块</a></li>
 			<li><a class="gray">类、对象</a></li>
 		</ul>
 	</li>
-	<li><a>结构</a></li>
+	<li><a id="menu_040" href="/document/040.html">控制结构</a></li>
 	<li>
 		<ul>
-			<li><a>if 条件分支</a></li>
-			<li><a>while 循环</a></li>
-			<li><a>for 遍历</a></li>
+			<li><a id="menu_041" href="/document/041.html">if 条件分支</a></li>
+			<li><a id="menu_042" href="/document/042.html">while 循环</a></li>
+			<li><a id="menu_043" href="/document/043.html">for 遍历</a></li>
 		</ul>
 	</li>
-	<li><a>处理器</a></li>
+	<li><a id="menu_050" href="/document/050.html">处理器</a></li>
 	<li><a>函数</a></li>
 	<li>
 		<ul>

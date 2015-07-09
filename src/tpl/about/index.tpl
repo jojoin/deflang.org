@@ -1,4 +1,7 @@
 
+<!--导航栏高亮-->
+<script type="text/javascript">nav_active="nav_about"</script>
+
 <h4>关于 Def</h4>
 
 <p>Def 是新一代基于虚拟机的开源脚本编程语言，拥有 C 的简捷语法和 Lisp 的强大表现力。</p>

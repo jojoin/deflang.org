@@ -35,6 +35,7 @@ defun createhtml(file  css:""  sta:""  end:"")
 	if ~isok # 错误
 		html_file : html_file + " fs write error !"
 	;
+	# printl('www.deflang.org/'+html_file)
 	printl(html_file)
 ;
 

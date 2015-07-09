@@ -1,4 +1,7 @@
 
+<!--导航栏高亮-->
+<script type="text/javascript">nav_active="nav_news"</script>
+
 <style>
 	#news p{
 		display: block; margin: 16px 0 0 0; padding-top: 16px;

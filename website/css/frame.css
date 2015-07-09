@@ -102,6 +102,7 @@ code{
 
 code.block{
 	display: block;
+	white-space: pre-wrap;
 	font-size: 14px;
 	padding: 10px 16px;
 	margin: 12px 0;
