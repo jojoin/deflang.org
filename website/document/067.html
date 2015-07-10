@@ -5,7 +5,7 @@
     <title>Def 编程语言官方网站</title>
     <link rel="stylesheet" type="text/css" href="/css/global.css" />
     <link rel="stylesheet" type="text/css" href="/css/frame.css" />
-    <link rel="stylesheet" type="text/css" href="/css/simple.css" /><!css!>
+    <link rel="stylesheet" type="text/css" href="/css/document.css" /><!css!>
     <!headjs!>
     <script>/* 百度统计代码 */
 		var _hmt = _hmt || [];
@@ -60,38 +60,89 @@
 		</div>
 	</div>
 
+<!--
+
+文档菜单
+
+-->
 
 <!--导航栏高亮-->
-<script type="text/javascript">nav_active="nav_news"</script>
-
-<style>
-	#news p{
-		display: block; margin: 16px 0 0 0; padding-top: 16px;
-		border-top: 1px dashed #eee;  
-	}
-	#news i{
-		display: block; color: #999; font-size: 13px; 
-	}
-</style>
-
-<div id="news">
-
-<h4>Def 相关新闻</h4>
-
-	<p>Def 源代码镜像托管至 Git@OSC，欢饮给出功能建议，反馈 BUG 或贡献代码。<a href="https://git.oschina.net/yangjiePro/Def" target="_blank">托管地址</a></p><i>2015-6-29 13:27</i>
-
-	<p>Def 登陆开源中国社区，成为编辑推荐的优秀开源软件项目。<a href="http://www.oschina.net/p/def" target="_blank">点击查看</a></p><i>2015-6-29 13:27</i>
-
-	<p>Def v0.1.1正式版发布！</p><i>2015-6-29 13:27</i>
-
-	<p>Def v0.1.0测试版本发布！</p>
-	<i>2015-6-25 09:14</i>
-
-	<p>Def 语言源代码已托管至 Github ，欢迎反馈 BUG 或提交代码。 <a href="https://github.com/yangjiePro/Def" target="_blank">点击查看</a></p>
-	<i>2015-6-16 15:07</i>
+<script type="text/javascript">nav_active="nav_document"</script>
 
 
-</div>
+<ul id="menu">
+	<li class="title">文档目录：</li>
+	<li><a id="menu_010" href="/document/010.html">操作符</a></li>
+	<li><a id="menu_020" href="/document/020.html">关键字</a></li>
+	<li><a id="menu_030" href="/document/030.html">变量</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_031" href="/document/031.html">基本</a></li>
+			<li><a id="menu_032" href="/document/032.html">高级</a></li>
+			<li><a id="menu_033" href="/document/033.html">容器</a></li>
+			<li><a id="menu_034" href="/document/034.html">模块</a></li>
+			<li><a class="gray">类、对象</a></li>
+		</ul>
+	</li>
+	<li><a id="menu_040" href="/document/040.html">控制结构</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_041" href="/document/041.html">if 条件分支</a></li>
+			<li><a id="menu_042" href="/document/042.html">while 循环</a></li>
+			<li><a id="menu_043" href="/document/043.html">for 遍历</a></li>
+		</ul>
+	</li>
+	<li><a id="menu_050" href="/document/050.html">函数</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_051" href="/document/051.html">系统函数</a></li>
+		</ul>
+	</li>
+	<li><a id="menu_060" href="/document/060.html">原生对象函数</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_063" href="/document/063.html">string 字符串</a></li>
+			<li><a id="menu_067" href="/document/067.html">node 节点</a></li>
+		</ul>
+	</li>
+	<li><a id="menu_070" href="/document/070.html">处理器</a></li>
+	<li><a id="menu_080" href="/document/080.html">模块</a></li>
+    <li>
+        <ul>
+            <li><a id="menu_081" href="/document/081.html">全局变量</a></li>
+        </ul>
+    </li>
+	<li><a id="menu_090" href="/document/090.html">系统模块</a></li>
+	<li>
+		<ul>
+			<li><a id="menu_091" href="/document/091.html">fs 文件系统</a></li>
+		</ul>
+	</li>
+	
+</ul>
+
+
+<div id="content">
+
+<!--菜单栏高亮-->
+<script type="text/javascript">menu_active="067"</script>
+
+<h5>node 节点</h5>
+
+<h6>type()</h6>
+
+<p>获取节点的类型名称。返回字符串。</p>
+
+<code class="block">block : {
+	n
+	n : n + <b>1</b>
+}
+<span># 打印节点的类型</span>
+<i>printlr</i>(
+	block[<b>1</b>].<i>type</i>()  <span># variable</span>
+	block[<b>2</b>].<i>type</i>()  <span># assign</span>
+)
+</code></div>
 
 
 	</div><!-- end wrap -->

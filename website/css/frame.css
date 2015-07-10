@@ -103,6 +103,7 @@ code{
 code.block{
 	display: block;
 	white-space: pre-wrap;
+	tab-size: 4;
 	font-size: 14px;
 	padding: 10px 16px;
 	margin: 12px 0;

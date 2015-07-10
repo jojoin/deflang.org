@@ -1,7 +1,7 @@
 <!--菜单栏高亮-->
-<script type="text/javascript">menu_active="050"</script>
+<script type="text/javascript">menu_active="042"</script>
 
-<h4>处理器</h4>
+<h5>while 循环</h5>
 
 <p>Def 的 while 语句与 C 或 Python 的 while 语句类似，以关键字<code>while</code>开始，分号<code>;</code>结束。下面是一些使用示例：</p>
 

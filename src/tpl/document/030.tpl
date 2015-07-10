@@ -2,7 +2,7 @@
 <!--菜单栏高亮-->
 <script type="text/javascript">menu_active="030"</script>
 
-<h6>变量</h6>
+<h5>变量</h5>
 
 <p>Def 内建类型包含： </p>
 

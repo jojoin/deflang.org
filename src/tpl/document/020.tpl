@@ -2,7 +2,7 @@
 <!--菜单栏高亮-->
 <script type="text/javascript">menu_active="020"</script>
 
-<h6>关键字</h6>
+<h5>关键字</h5>
 
 <p>注意：关键字不能作为程序的变量名、函数名、处理器名或类成员名。</p>
 

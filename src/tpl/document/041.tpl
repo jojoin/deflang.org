@@ -1,7 +1,7 @@
 <!--菜单栏高亮-->
 <script type="text/javascript">menu_active="041"</script>
 
-<h6>if 条件分支</h6>
+<h5>if 条件分支</h5>
 
 <p>Def 的 if 语句与 C 或 Python 的 if 语句类似，包含三个关键字<code>if</code>、<code>elif</code>和<code>else</code>，并用分号<code>;</code>结束。</p>
 

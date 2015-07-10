@@ -1,7 +1,7 @@
 <!--菜单栏高亮-->
 <script type="text/javascript">menu_active="043"</script>
 
-<h6>for 遍历结构</h6>
+<h5>for 遍历结构</h5>
 
 <p>关键字<code>for</code>开始，分号<code>;</code>结束。</p>
 

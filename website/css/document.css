@@ -11,7 +11,7 @@
 
 }
 #menu>li.title{
-	color: #aaa;
+	color: #333;
 }
 #menu li{
 	padding: 3px 12px;
@@ -68,15 +68,13 @@
 	padding-bottom: 36px;
 }
 
-#content h6{
+#content h5, #content h6{
 	display: block; position: relative; left: -14px;
 	color: #444;
 }
-/*
-#content h6::before{
-	content:"§ "
+#content h6{
+	margin-top: 30px;
 }
-*/
 
 #content p{
 	margin: 14px 0;

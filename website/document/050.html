@@ -92,24 +92,30 @@
 			<li><a id="menu_043" href="/document/043.html">for 遍历</a></li>
 		</ul>
 	</li>
-	<li><a id="menu_050" href="/document/050.html">处理器</a></li>
-	<li><a>函数</a></li>
+	<li><a id="menu_050" href="/document/050.html">函数</a></li>
 	<li>
 		<ul>
-			<li><a>系统函数</a></li>
+			<li><a id="menu_051" href="/document/051.html">系统函数</a></li>
 		</ul>
 	</li>
-	<li><a>原生对象函数</a></li>
+	<li><a id="menu_060" href="/document/060.html">原生对象函数</a></li>
 	<li>
 		<ul>
-			<li><a>string 字符串</a></li>
+			<li><a id="menu_063" href="/document/063.html">string 字符串</a></li>
+			<li><a id="menu_067" href="/document/067.html">node 节点</a></li>
 		</ul>
 	</li>
-	<li><a>模块</a></li>
-	<li><a>系统模块</a></li>
+	<li><a id="menu_070" href="/document/070.html">处理器</a></li>
+	<li><a id="menu_080" href="/document/080.html">模块</a></li>
+    <li>
+        <ul>
+            <li><a id="menu_081" href="/document/081.html">全局变量</a></li>
+        </ul>
+    </li>
+	<li><a id="menu_090" href="/document/090.html">系统模块</a></li>
 	<li>
 		<ul>
-			<li><a>fs 文件系统</a></li>
+			<li><a id="menu_091" href="/document/091.html">fs 文件系统</a></li>
 		</ul>
 	</li>
 	
@@ -121,99 +127,82 @@
 <!--菜单栏高亮-->
 <script type="text/javascript">menu_active="050"</script>
 
-<h6>处理器</h6>
+<h5>函数</h5>
 
-<p>定义方式以关键字<code>def</code>开始，分号<code>;</code>结束。</p>
+<p>Def 的函数设计参考 Python 的实现，可传入任意个数参数、包含参数默认值、按名称传参等高级特征。</p>
 
-<p>Def 处理器是一个全新的概念，定义方式和使用方法与 <a href="/document/000.html">函数</a> 类似。不同的是，函数是用来处理数据的，而处理器是用来"处理代码"的。对，你可以像处理数据一样处理代码：获取代码的类型、调用代码取值、或给代码赋值等操作！</p>
+<p>定义格式：<code>defun</code> + <code><函数名>(<参数> ...)</code> + 函数体 + <code>;</code></p>
 
-<p>处理器与 Lisp 的宏一样，使用它，你可以方便地元编程、扩展语言的行为、定义 DSL 、在运行期随意改变代码的行为。真正做到数据及代码！</p>
+<h6>返回值</h6>
 
-<p>为了展示处理器的强大功能，我们尝试编写一些简单的语言扩展。</p>
+<p>除了通过 return 关键字返回值，默认将函数体中最后一条语句的值，作为函数的返回值。</p>
 
-<p>虽然 Def 已经原生支持 for 循环，但是我们还是可以自己编写一个数组的遍历处理器：</p>
-
-<code class="block"><span># 定义数组遍历处理器</span>
-<div>def</div> foreach{con k v}
-	arr : <i>evaluat</i>(con)  <span># 执行取值</span>
-	ii  : <i>size</i>(arr)
-	i   : <b>1</b>
-	<div>while</div> i<=ii
-		<i>assign</i>(k i)  <span># 执行赋值</span>
-		<i>assign</i>(v arr[i])
-		j  : <b>4</b>
-		jj : <i>size</i>(<em>_argv_</em>)
-		<div>while</div> j<=jj
-			<i>evaluat</i>(<em>_argv_</em>[j])  <span># 执行循环体</span>
-			j : j + <b>1</b>
-		;
-		i : i + <b>1</b>
-	;
+<code class="block"><span># 默认返回值</span>
+<div>defun</div> add(a b)
+	a + b  <span># 无需 return ，返回a+b</span>
 ;
-
-<span># 使用数组遍历处理器</span>
-list : (<b>1 2 3 4 5 6</b>)
-total : <b>0</b>
-foreach{ list k v
-	<i>printl</i>(v)  <span># 打印列表的每一项</span>
-	total : total + v  <span># 求和</span>
-	<span># 此处可任意增加处理语句</span>
-}
-<i>print</i>(total)  <span>#求和结果： 21</span></code>
-
-
-<p>Def 处理器自定义的 switch case 结构，支持 end 关键字（类似 C 中的 break）：</p>
-
-<code class="block"><span># 自定义的 switch case 结构</span>
-<div>def</div> myswitch{}
-	base : <i>none</i>
-	hd : <i>true</i>
-	getcase : <i>false</i>
-	k : <b>0</b>
-	len : <i>size</i>(<em>_argv_</em>)
-	<div>while</div> k < len
-		k : k + <b>1</b>
-		v : <em>_argv_</em>[k]
-		<div>if</div> 1=k
-			base : <i>evaluat</i>( v ) <span># 判断条件</span>
-			<div>continue</div>
-		;
-		<span># printl(v.type())</span>
-		isbreak : <u>'variable'</u>=v.type() & <u>'end'</u>=v.name()
-		<div>if</div> getcase
-			<div>if</div> isbreak
-				<div>break</div>
-			;
-			<i>evaluat</i>( v ) <span># 执行case体</span>
-			<div>continue</div>
-		;
-		<div>if</div> hd
-			cond : <i>evaluat</i>( v ) <span># case 条件</span>
-			<div>if</div> base=cond <span># case 条件为真</span>
-				getcase : <i>true</i>
-			;
-			hd : <i>false</i>
-		;
-		<div>if</div> isbreak
-			hd : <i>true</i>
-		;
+<span># return 语句</span>
+<div>defun</div> div(a b)
+	<div>if</div> b=<b>0</b>
+		<div>return</div> <i>false</i>  <span># 除零错误</span>
 	;
+	a / b  <span># 无需 return ，返回 a 除 b</span>
 ;
+</code>
 
-<span># 调用自定义的 switch 语句</span>
-k : <u>'b'</u>
-myswitch{ k
-	<u>'a'</u>
-		<i>printl</i>(<u>'k is "a"'</u>)
-		<span># 此处添加行为 ...</span>
-	end
-	<u>'b'</u>
-		<i>printl</i>(<u>'k is "b"'</u>)
-		<span># 此处添加行为 ...</span>
-	end
-}
-<span># 结果：k is "b"</span></code>
+<h6>任意数量参数</h6>
 
+<p>虽然可以为函数指定特定数量的参数，但在使用时可以传入任意个数和类型的参数，这让函数具备强大的灵活性。</p>
+
+<p>除了指定名字形式参数，在使用时，函数拥有一个参数列表变量：<code>_argv_</code>，按循序保存了所有传入的参数：</p>
+
+<code class="block"><span># 任意数量的参数</span>
+<div>defun</div> test(a b)
+	<i>print</i>(a)
+	<i>print</i>(b)
+	<i>print</i>(<em>_argv_</em>)  <span># _argv_为全部实参列表</span>
+;
+<span># 调用函数，传入任意个数参数</span>
+test(1  2.5  'def')
+<span># 打印结果：1 , 2.5 , (1  2.5  'def')</span>
+</code>
+
+<h6>参数默认值</h6>
+
+<p>为函数参数指定默认值，调用时如果未传入则使用默认值，如果未指定默认值且调用未传入时，则抛出参数未指定错误，终止脚本。</p>
+
+<p>注意：默认参数必须从右向左顺序指定，不能跳过。</p>
+
+<code class="block"><span># 指定默认参数</span>
+<div>defun</div> test(a b c:<b>0</b>) <span>#参数 c 默认为 0</span>
+	<i>print</i>(a)
+	<i>print</i>(b)
+	<i>print</i>(c)
+;
+<span># 调用函数，传入任意个数参数</span>
+test(<b>1 2 3 4</b>)
+<span># 打印结果：1 , 2 , 3</span>
+<span># 使用默认值</span>
+test(<b>1 2</b>)
+<span># 打印结果：1 , 2 , 0</span>
+test(<b>1</b>)  <span># 错误：参数 b 必须传入</span>
+</code>
+
+<h6>按名称传参</h6>
+
+<p>支持按形式参数名称方式传参，按名传参时可按任意次序传递。</p>
+
+<code class="block"><span># 按名称传参</span>
+<div>defun</div> test(a b c:<b>0</b>)
+	<i>print</i>(a)
+	<i>print</i>(b)
+	<i>print</i>(c)
+	<i>print</i>(<em>_argv_</em>)
+;
+test(<b>1 2 3 4</b>)  <span># 打印结果：1 , 2 , 3 , (1 2 3 4)</span>
+test(<b>1</b> b:<b>2</b>)  <span># 打印结果：1 , 2 , 0 , (1 2)</span>
+test(c:<b>9</b> a:<b>7</b> b:<b>8</b>)  <span>#任意次序传参，打印结果：7 , 8 , 9 , (9 7 8)</span>
+</code>
 
 </div>
 
