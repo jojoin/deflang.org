@@ -56,6 +56,8 @@
 			<li><a id="menu_091" href="/document/091.html">fs 文件系统</a></li>
 		</ul>
 	</li>
+    <li><a id="menu_100" href="/document/100.html">异常</a></li>
+    <li><a class="gray" id="menu_110" href="/document/110.html">类与对象</a></li>
 	
 </ul>
 

@@ -24,7 +24,7 @@
 
 <p>　　<a href="https://github.com/yangjiePro/Def">访问 Github 托管页面</a></p>
 
-<p>Def 的虚拟机采用 C++11 编写，自助编译时需要编译器支持 C++11 标准。</p>
+<p>Def 的虚拟机采用 C++11 编写，自助编译时需要编译器支持 C++11 及 C++ STL 标准库。</p>
 
 
 <br/>

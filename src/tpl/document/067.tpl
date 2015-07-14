@@ -17,3 +17,7 @@
 	block[<b>2</b>].<i>type</i>()  <span># assign</span>
 )
 </code>
+
+<h6>name()</h6>
+
+<p>获取节点的名称。返回字符串。</p>
