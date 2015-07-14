@@ -11,6 +11,6 @@
 
 <h6>module 模块</h6>
 
-<p>普通模块对象是一个 Def 代码文件，通过 import 语句加载：<code><i>import</i> <u>"usr_mod.d"</u></code>。</p>
+<p>普通模块对象是一个 Def 代码文件，通过 import 语句加载：<code><dfn>import</dfn> <u>"usr_mod.d"</u></code>。</p>
 
 <p><a href="/document/000.html">点击这里</a> 查看更多模块的加载和使用方面的内容。</p>

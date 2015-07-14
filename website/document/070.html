@@ -142,16 +142,16 @@
 <p>虽然 Def 已经原生支持 for 循环，但是我们还是可以自己编写一个数组的遍历处理器：</p>
 
 <code class="block"><span># 定义数组遍历处理器</span>
-<div>def</div> foreach{con k v}
+<dfn>def</dfn> foreach{con k v}
 	arr : <i>evaluat</i>(con)  <span># 执行取值</span>
 	ii  : <i>size</i>(arr)
 	i   : <b>1</b>
-	<div>while</div> i<=ii
+	<dfn>while</dfn> i<=ii
 		<i>assign</i>(k i)  <span># 执行赋值</span>
 		<i>assign</i>(v arr[i])
 		j  : <b>4</b>
 		jj : <i>size</i>(<em>_argv_</em>)
-		<div>while</div> j<=jj
+		<dfn>while</dfn> j<=jj
 			<i>evaluat</i>(<em>_argv_</em>[j])  <span># 执行循环体</span>
 			j : j + <b>1</b>
 		;
@@ -173,36 +173,36 @@ foreach{ list k v
 <p>Def 处理器自定义的 switch case 结构，支持 end 关键字（类似 C 中的 break）：</p>
 
 <code class="block"><span># 自定义的 switch case 结构</span>
-<div>def</div> myswitch{}
+<dfn>def</dfn> myswitch{}
 	base : <i>none</i>
 	hd : <i>true</i>
 	getcase : <i>false</i>
 	k : <b>0</b>
 	len : <i>size</i>(<em>_argv_</em>)
-	<div>while</div> k < len
+	<dfn>while</dfn> k < len
 		k : k + <b>1</b>
 		v : <em>_argv_</em>[k]
-		<div>if</div> 1=k
+		<dfn>if</dfn> 1=k
 			base : <i>evaluat</i>( v ) <span># 判断条件</span>
-			<div>continue</div>
+			<dfn>ctn</dfn>
 		;
 		<span># printl(v.type())</span>
 		isbreak : <u>'variable'</u>=v.type() & <u>'end'</u>=v.name()
-		<div>if</div> getcase
-			<div>if</div> isbreak
-				<div>break</div>
+		<dfn>if</dfn> getcase
+			<dfn>if</dfn> isbreak
+				<dfn>brk</dfn>
 			;
 			<i>evaluat</i>( v ) <span># 执行case体</span>
-			<div>continue</div>
+			<dfn>ctn</dfn>
 		;
-		<div>if</div> hd
+		<dfn>if</dfn> hd
 			cond : <i>evaluat</i>( v ) <span># case 条件</span>
-			<div>if</div> base=cond <span># case 条件为真</span>
+			<dfn>if</dfn> base=cond <span># case 条件为真</span>
 				getcase : <i>true</i>
 			;
 			hd : <i>false</i>
 		;
-		<div>if</div> isbreak
+		<dfn>if</dfn> isbreak
 			hd : <i>true</i>
 		;
 	;

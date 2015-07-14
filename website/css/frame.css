@@ -118,11 +118,11 @@ code *{
 }
 
 
-code div{ color: #FF9900; font-weight: bold; display: inline; } /*关键字*/
+code dfn{ color: #AC4E40; display: inline; } /*关键字*/
 code i{ color: #6699FF; } /*系统函数*/
 code em{ color: #999900; } /*系统变量*/
-code b{ color: #993300; } /*数字*/
-code u{ color: #090; }    /*字符串*/
+code b{ color: #8959A8; } /*数字*/
+code u{ color: #1B9F43; }    /*字符串*/
 code span{ color: #999988; font-style: italic; } /*注释*/
 
 

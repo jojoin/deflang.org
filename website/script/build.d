@@ -14,14 +14,14 @@ html_footer : fs.read("tpl/footer.tpl")
 
 
 # 添加css
-defun addcss(html name)
+fn addcss(html name)
 	mk : '<!css!>'
 	html.replace(mk  '<link rel="stylesheet" type="text/css" href="/css/'+name+'.css" />'+mk)
 ;
 
 
 # 生成一个页面
-defun createhtml(file  css:""  sta:""  end:"")
+fn createhtml(file  css:""  sta:""  end:"")
 	if css=""
 		css : file
 	;
@@ -55,9 +55,9 @@ createhtml( 'getstart/index' 'getstart' )    # 快速开始
 html_doc_menu : fs.read(dirtpl+'document/menu.tpl')
 num : 0
 docs : fs.getfiles(dirtpl+'document')
-for docs i fn
+for docs i fname
 	num : num + 1
-	nn : fn.split('.')
+	nn : fname.split('.')
 	nn : nn[1] # 不带后缀的文件名
 	if nn~='menu'
 		createhtml( 'document/'+nn 'document' html_doc_menu '</div>')    # 文档

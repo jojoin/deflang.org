@@ -21,7 +21,7 @@
 
 <p>复制文件到目标文件或目录，如果存在目标文件则覆盖它。</p>
 
-<code class="block"><div>import</div> <u>"fs"</u>
+<code class="block"><dfn>import</dfn> <u>"fs"</u>
 fs.copy(<u>'f1.txt'  'f2.txt'</u>) <span># 复制文件 f1.txt 到 f2.txt</span>
 fs.copy(<u>'f1.txt'  '../dir'</u>) <span># 复制文件 f1.txt 到 ../dir 目录下</span>
 </code>

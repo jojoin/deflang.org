@@ -5,20 +5,20 @@
 
 <p>Def 的函数设计参考 Python 的实现，可传入任意个数参数、包含参数默认值、按名称传参等高级特征。</p>
 
-<p>定义格式：<code>defun</code> + <code><函数名>(<参数> ...)</code> + 函数体 + <code>;</code></p>
+<p>定义格式：<code>fn</code> + <code><函数名>(<参数> ...)</code> + 函数体 + <code>;</code></p>
 
 <h6>返回值</h6>
 
-<p>除了通过 return 关键字返回值，默认将函数体中最后一条语句的值，作为函数的返回值。</p>
+<p>除了通过 ret关键字返回值，默认将函数体中最后一条语句的值，作为函数的返回值。</p>
 
 <code class="block"><span># 默认返回值</span>
-<div>defun</div> add(a b)
+<dfn>fn</dfn> add(a b)
 	a + b  <span># 无需 return ，返回a+b</span>
 ;
 <span># return 语句</span>
-<div>defun</div> div(a b)
-	<div>if</div> b=<b>0</b>
-		<div>return</div> <i>false</i>  <span># 除零错误</span>
+<dfn>fn</dfn> div(a b)
+	<dfn>if</dfn> b=<b>0</b>
+		<dfn>ret</dfn> <i>false</i>  <span># 除零错误</span>
 	;
 	a / b  <span># 无需 return ，返回 a 除 b</span>
 ;
@@ -31,7 +31,7 @@
 <p>除了指定名字形式参数，在使用时，函数拥有一个参数列表变量：<code>_argv_</code>，按循序保存了所有传入的参数：</p>
 
 <code class="block"><span># 任意数量的参数</span>
-<div>defun</div> test(a b)
+<dfn>fn</dfn> test(a b)
 	<i>print</i>(a)
 	<i>print</i>(b)
 	<i>print</i>(<em>_argv_</em>)  <span># _argv_为全部实参列表</span>
@@ -48,7 +48,7 @@ test(1  2.5  'def')
 <p>注意：默认参数必须从右向左顺序指定，不能跳过。</p>
 
 <code class="block"><span># 指定默认参数</span>
-<div>defun</div> test(a b c:<b>0</b>) <span>#参数 c 默认为 0</span>
+<dfn>fn</dfn> test(a b c:<b>0</b>) <span>#参数 c 默认为 0</span>
 	<i>print</i>(a)
 	<i>print</i>(b)
 	<i>print</i>(c)
@@ -67,7 +67,7 @@ test(<b>1</b>)  <span># 错误：参数 b 必须传入</span>
 <p>支持按形式参数名称方式传参，按名传参时可按任意次序传递。</p>
 
 <code class="block"><span># 按名称传参</span>
-<div>defun</div> test(a b c:<b>0</b>)
+<dfn>fn</dfn> test(a b c:<b>0</b>)
 	<i>print</i>(a)
 	<i>print</i>(b)
 	<i>print</i>(c)

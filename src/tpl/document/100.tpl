@@ -8,16 +8,16 @@
 <p>示例：</p>
 
 <code class="block"><span># 异常处理</span>
-<div>defun</div> run()
+<dfn>defun</dfn> run()
     <i>printl</i>(<u>'function run'</u>)
-    <div>throw</div> <u>"I'm an Exception"</u> <span># 抛出异常（任意对象）</span>
+    <dfn>throw</dfn> <u>"I'm an Exception"</u> <span># 抛出异常（任意对象）</span>
 ;
 <span># 执行代码，捕获异常</span>
-<div>try</div>
+<dfn>try</dfn>
     run()
-<div>catch</div> e <span># 成功捕获</span>
+<dfn>catch</dfn> e <span># 成功捕获</span>
     <i>print</i>(<u>'catch: '</u> e)
-<div>else</div> <span># 代码成功执行，未捕获到异常时执行的代码（可省略）</span>
+<dfn>else</dfn> <span># 代码成功执行，未捕获到异常时执行的代码（可省略）</span>
     <i>printl</i>(<u>'nothing'</u>)
 ;
 </code>
